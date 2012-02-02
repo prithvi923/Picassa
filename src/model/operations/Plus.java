@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the plus command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class Plus extends BinaryExpression {
 

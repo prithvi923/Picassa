@@ -12,10 +12,7 @@ import model.operations.Let;
  * This class is responsible for recognizing and parsing commands
  * that take three expressions as their arguments
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 
 abstract public class TernaryExpression extends Expression {

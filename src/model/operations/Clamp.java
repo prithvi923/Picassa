@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the clamp command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class Clamp extends UnaryExpression {
 

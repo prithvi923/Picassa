@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the wrap command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class Wrap extends UnaryExpression {
 

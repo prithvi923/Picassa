@@ -7,11 +7,7 @@ import java.util.regex.Pattern;
 /*
  * This class is responsible for recognizing and parsing variables set by the let command
  * 
- * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class AssignmentExpression extends Expression {
 
@@ -59,7 +55,8 @@ public class AssignmentExpression extends Expression {
 		return new AssignmentExpression(var);
 	}
 
-	public RGBColor evaluate(double x, double y, double t, HashMap<String, Expression> map) {
+	public RGBColor evaluate(double x, double y, double t,
+			HashMap<String, Expression> map) {
 		if (map == null)
 			throw new ParserException("Undefined variable: " + myVar);
 

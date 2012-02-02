@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the Perlin Color command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class PerlinColor extends BinaryExpression {
 

@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the Perlin Black and White command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class PerlinBW extends BinaryExpression {
 

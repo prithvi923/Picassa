@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the RgbToYCrCb command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class RgbToYCrCb extends UnaryExpression {
 

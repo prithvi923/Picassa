@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the modulus command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class Mod extends BinaryExpression {
 

@@ -7,7 +7,12 @@ import model.ExpressionFactory;
 import model.RGBColor;
 import model.TernaryExpression;
 import model.util.ColorCombinations;
-
+/*
+ * This subclass is responsible for recognizing and parsing 
+ * the if command
+ * 
+ * @author Prithvi Prabahar
+ */
 public class If extends TernaryExpression {
 
 	public If(String command, Expression operand1, Expression operand2, Expression operand3) {

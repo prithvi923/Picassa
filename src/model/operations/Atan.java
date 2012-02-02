@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the arctangent command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class Atan extends UnaryExpression {
 

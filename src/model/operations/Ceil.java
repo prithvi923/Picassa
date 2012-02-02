@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the ceiling command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 
 public class Ceil extends UnaryExpression {

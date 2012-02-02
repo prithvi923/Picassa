@@ -7,8 +7,6 @@ package model;
  * using the factory method
  * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class ExpressionFactory {
 

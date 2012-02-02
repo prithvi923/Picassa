@@ -12,10 +12,7 @@ import model.operations.*;
  * This class is responsible for recognizing and parsing commands
  * that require two expressions as arguements
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 abstract public class BinaryExpression extends Expression {
 
@@ -35,7 +32,7 @@ abstract public class BinaryExpression extends Expression {
 	abstract public BinaryExpression getType(String command, Expression left,
 			Expression right);
 
-	abstract public RGBColor evaluate(double x, double y, double t
+	abstract public RGBColor evaluate(double x, double y, double t,
 			HashMap<String, Expression> map);
 
 	public BinaryExpression(String command, Expression operand1,

@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the tangent command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class Tan extends UnaryExpression {
 

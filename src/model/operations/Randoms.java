@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the random command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class Randoms extends ZeroExpression {
 

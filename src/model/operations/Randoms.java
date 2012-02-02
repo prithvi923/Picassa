@@ -49,7 +49,7 @@ public class Randoms extends ZeroExpression {
 
 	}
 
-	public RGBColor evaluate(double x, double y, HashMap<String, Expression> map) {
+	public RGBColor evaluate(double x, double y, double t,HashMap<String, Expression> map) {
 
 		return ColorCombinations.random(myRed, myGreen, myBlue);
 

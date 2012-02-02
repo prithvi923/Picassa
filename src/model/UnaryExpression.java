@@ -33,7 +33,7 @@ abstract public class UnaryExpression extends Expression {
 
 	abstract public UnaryExpression getType(String command, Expression only);
 
-	abstract public RGBColor evaluate(double x, double y,
+	abstract public RGBColor evaluate(double x, double y, double t,
 			HashMap<String, Expression> map);
 
 	public UnaryExpression(String command, Expression operand1) {

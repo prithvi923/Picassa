@@ -12,10 +12,7 @@ import model.util.ColorCombinations;
  * This subclass is responsible for recognizing and parsing 
  * the exponent command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class Exp extends BinaryExpression {
 
@@ -27,11 +24,11 @@ public class Exp extends BinaryExpression {
 		super();
 	}
 
-	public RGBColor evaluate(double x, double y, HashMap<String, Expression> map) {
+	public RGBColor evaluate(double x, double y, double t,HashMap<String, Expression> map) {
 
 		return ColorCombinations.exponent(
-				myOperand1.evaluate(x, y, map),
-				myOperand2.evaluate(x, y, map));
+				myOperand1.evaluate(x, y, t,map),
+				myOperand2.evaluate(x, y, t,map));
 
 	}
 

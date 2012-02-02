@@ -25,9 +25,9 @@ public class Product extends InfiniteExpression {
 		super();
 	}
 
-	public RGBColor evaluate(double x, double y, HashMap<String, Expression> map) {
+	public RGBColor evaluate(double x, double y, double t,HashMap<String, Expression> map) {
 
-		return ColorCombinations.prod(myExpressions, x, y, map);
+		return ColorCombinations.prod(myExpressions, x, y, t,map);
 
 	}
 

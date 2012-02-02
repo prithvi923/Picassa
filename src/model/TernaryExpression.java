@@ -33,7 +33,7 @@ abstract public class TernaryExpression extends Expression {
 	abstract public TernaryExpression getType(String command, Expression left,
 			Expression middle, Expression right);
 
-	abstract public RGBColor evaluate(double x, double y,
+	abstract public RGBColor evaluate(double x, double y, double t,
 			HashMap<String, Expression> map);
 
 	public TernaryExpression(String command, Expression operand1,

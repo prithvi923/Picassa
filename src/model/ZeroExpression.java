@@ -28,7 +28,7 @@ abstract public class ZeroExpression extends Expression {
 
 	abstract public ZeroExpression getType(String command);
 
-	abstract public RGBColor evaluate(double x, double y,
+	abstract public RGBColor evaluate(double x, double y, double t,
 			HashMap<String, Expression> map);
 
 	public ZeroExpression(String command) {

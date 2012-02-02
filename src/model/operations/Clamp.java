@@ -39,9 +39,9 @@ public class Clamp extends UnaryExpression {
 
 	}
 
-	public RGBColor evaluate(double x, double y, HashMap<String, Expression> map) {
+	public RGBColor evaluate(double x, double y, double t,HashMap<String, Expression> map) {
 
-		return ColorCombinations.clamp(myOperand1.evaluate(x, y, map));
+		return ColorCombinations.clamp(myOperand1.evaluate(x, y, t,map));
 
 	}
 

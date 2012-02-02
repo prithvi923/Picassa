@@ -200,13 +200,13 @@ public class ColorCombinations {
 	}
 
 	public static RGBColor sum(ArrayList<Expression> expressions, double x,
-			double y, HashMap<String, Expression> map) {
+			double y, double t, HashMap<String, Expression> map) {
 
-		RGBColor sum = expressions.get(0).evaluate(x, y, map);
+		RGBColor sum = expressions.get(0).evaluate(x, y, t, map);
 
 		for (int i = 1; i < expressions.size(); i++) {
 
-			sum = add(sum, expressions.get(i).evaluate(x, y, map));
+			sum = add(sum, expressions.get(i).evaluate(x, y, t, map));
 
 		}
 
@@ -214,13 +214,13 @@ public class ColorCombinations {
 	}
 
 	public static RGBColor prod(ArrayList<Expression> expressions, double x,
-			double y, HashMap<String, Expression> map) {
+			double y, double t,HashMap<String, Expression> map) {
 
-		RGBColor product = expressions.get(0).evaluate(x, y, map);
+		RGBColor product = expressions.get(0).evaluate(x, y, t, map);
 
 		for (int i = 1; i < expressions.size(); i++) {
 
-			product = multiply(product, expressions.get(i).evaluate(x, y, map));
+			product = multiply(product, expressions.get(i).evaluate(x, y, t, map));
 
 		}
 
@@ -229,13 +229,13 @@ public class ColorCombinations {
 	}
 
 	public static RGBColor average(ArrayList<Expression> expressions, double x,
-			double y, HashMap<String, Expression> map) {
+			double y, double t, HashMap<String, Expression> map) {
 		
-		RGBColor average = expressions.get(0).evaluate(x, y, map);
+		RGBColor average = expressions.get(0).evaluate(x, y, t, map);
 
 		for (int i = 1; i < expressions.size(); i++) {
 
-			average = add(average, expressions.get(i).evaluate(x, y, map));
+			average = add(average, expressions.get(i).evaluate(x, y, t, map));
 
 		}
 		
@@ -245,13 +245,13 @@ public class ColorCombinations {
 	}
 
 	public static RGBColor min(ArrayList<Expression> expressions, double x,
-			double y, HashMap<String, Expression> map) {
+			double y, double t,HashMap<String, Expression> map) {
 		
 		ArrayList<RGBColor> colors = new ArrayList<RGBColor>();
 		
 		for (Expression expression : expressions) {
 			
-			colors.add(expression.evaluate(x, y, map));
+			colors.add(expression.evaluate(x, y, t, map));
 			
 		}
 		
@@ -262,13 +262,13 @@ public class ColorCombinations {
 	}
 	
 	public static RGBColor max(ArrayList<Expression> expressions, double x,
-			double y, HashMap<String, Expression> map) {
+			double y, double t,HashMap<String, Expression> map) {
 		
 		ArrayList<RGBColor> colors = new ArrayList<RGBColor>();
 		
 		for (Expression expression : expressions) {
 			
-			colors.add(expression.evaluate(x, y, map));
+			colors.add(expression.evaluate(x, y, t, map));
 			
 		}
 		

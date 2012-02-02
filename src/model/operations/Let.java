@@ -11,10 +11,7 @@ import model.TernaryExpression;
  * This subclass is responsible for recognizing and parsing 
  * the let command
  * 
- * 
  * @author Prithvi Prabahar
- * 
- * 
  */
 public class Let extends TernaryExpression {
 
@@ -40,14 +37,14 @@ public class Let extends TernaryExpression {
 
 	}
 
-	public RGBColor evaluate(double x, double y, HashMap<String, Expression> map) {
+	public RGBColor evaluate(double x, double y, double t, HashMap<String, Expression> map) {
 		
 		if (map == null)
 			map = new HashMap<String, Expression>();
 		
 		map.put(myOperand1.toString(), myOperand2);
 		
-		return myOperand3.evaluate(x, y, map);
+		return myOperand3.evaluate(x, y, t, map);
 
 	}
 

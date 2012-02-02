@@ -26,9 +26,11 @@ public class VarExpression extends Expression {
 	private VarExpression() {
 	}
 
-	public RGBColor evaluate(double x, double y, HashMap<String, Expression> map) {
+	public RGBColor evaluate(double x, double y, double t, HashMap<String, Expression> map) {
 
 		if (myVar != null) {
+			if (myVar.equals("t"))
+				return ColorCombinations.var(t);
 			if (myVar.equals("x"))
 				return ColorCombinations.var(x);
 			else
